@@ -1,0 +1,108 @@
+body {
+	width: 780px;
+	margin: 0 auto;
+	background: #E7CEA5 url(bg2.jpg) repeat-y;
+	background-position: center top;
+	font-family: Baskerville, "Palatino Linotype", "Times New Roman", serif;
+}
+
+/*12em in original much larger, has default px be changed?*/
+#mainNav li {
+	width: 8em;
+}
+
+h1 {
+	background: url(logo.jpg) left center no-repeat;
+	margin-left: 5px;
+	padding-left: 50px;
+	font-size: 3em;
+	font-weight: bold;
+}
+
+h2 {
+	border: 2px solid #DDB575;
+}
+
+table {
+	font-size: 1.6em;
+	border: 2px solid #DDB575;
+}
+
+table caption {
+  text-align: right;
+  font-size: .5em;
+  padding-top: 25px;
+}
+
+#intro {
+	text-align: center;
+}
+
+#copyright {
+  clear: both;
+  font: bold 12px Tahoma, Geneva, sans-serif;
+  color: #65747E;
+  padding: 5px;
+  margin: 0 15px;
+  border: 1px dotted #98AFBE;
+  border-left: none;
+  border-right: none;
+}
+
+input[type="button"][value="Show"] {
+	font-weight: bold;
+	color: red;
+}
+
+/* Episode 1 & 2 Divs */
+/* -------------------------- */
+/* DIV */
+#table1 {
+	display: none;
+}
+
+#groups1 {
+	background-color: rgb(231,206,165);
+}
+
+#groups1, #ep12tab, #ep3tab {
+	margin: auto;
+}
+
+#table1 h3 {
+	text-align: center;
+	text-weight: bold;
+	font-size: 1.5em;
+	color: #DDB575;
+}
+/* ---- */
+
+/* Episode 3 Div */
+/* ------------- */
+/* DIV */
+#table3 {
+	width: 700px;
+	margin: 0 auto;
+	display: none;
+}
+/* ----- */
+
+
+/* Episode 1, 2 & 3 Elements Table */
+/* ------------------------------- */
+#ep12tab th, #ep3tab th {
+	font: bold .85em;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+#ep12tab td, #ep3tab td {
+	font-size: .75em;
+	padding: 5px 2px;
+	text-align: center;
+}
+
+#ep12tab tr, #ep3tab tr {
+	border-top: 2px solid #DDB575;
+}
+/* ----- */
