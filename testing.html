@@ -1,0 +1,141 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Testing</title>
+
+<link href="css/reset.css" rel="stylesheet" type="text/css" />
+<link href="css/general.css" rel="stylesheet" type="text/css" />
+<link href="css/mainNav.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+#content {
+	padding: 10px;
+}
+
+#content h2 {
+	text-decoration: underline;
+}
+
+#victim {   
+	padding: 10px;
+	width: 250px;
+	background-color: yellow;
+	color: black;
+	border-style:solid;
+	border-color:red;
+	border-width:2px;
+	
+	-moz-transition-duration: 1s;
+	-moz-transform: rotate(5deg);
+	   
+	-webkit-transition-duration: 1s;
+	-webkit-transform: rotate(5deg);
+	   
+	-o-transition-duration: 1s;
+	-o-transform: rotate(5deg);
+	   
+	transition-duration: 1s;
+	transform: rotate(5deg);
+	}
+	   
+#victim:hover {
+	background-color: red;
+	color: white;
+	-moz-transform:  rotate(350deg) scale(1.4) rotate(-30deg);
+	-webkit-transform:  rotate(350deg) scale(1.4) rotate(-30deg);
+	-o-transform:  rotate(350deg) scale(1.4) rotate(-30deg);
+	transform:  rotate(350deg) scale(1.4) rotate(-30deg);
+	}
+
+
+.example-date { 
+		background-color:#987; 
+		float:right;
+		position:relative;
+		padding:45px 5px 0px;
+		margin-left:10px;
+	}
+ 
+.example-date .month {
+		text-transform: uppercase;
+		font-size:25px;
+	}
+.example-date .day {
+		font-size:45px;
+		line-height:45px;
+		position:absolute;
+		//left:5px; top:0px;
+	}
+
+.example-date .year { 
+		display:block; 
+		position:absolute; right:-5px; top:15px;
+		-webkit-transform: rotate(-90deg); 
+		-moz-transform: rotate(-90deg);			
+	}
+</style>
+<!--[if IE]>
+<style>
+	.example-date .year {
+		filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+		right:-15px;
+		top:5px;
+	}
+</style>
+<![endif]-->
+</head>
+
+<body id="test">
+
+<div id="main">
+<h1><strong>Alex</strong> Hedley</h1>
+
+<br />
+<br />
+
+  <ul id="mainNav">
+    <li><a href="index.html" id="homeLink">Home</a></li>
+	<li><a href="doodleGod/doodleGod.html" id="dGLink">Doodle God</a></li>
+	<li><a href="testing.html" id="tLink">Testing</a>
+		<ul>
+			<li><a href="testing/fireworks.html" id="fireLink">Fireworks</a></li>
+			<li><a href="testing/CSS3/CSS3 Testing.html" id="fireLink">CSS3 Testing</a></li>
+		</ul>
+	</li>
+	<li><a href="code.html" id="cLink">Code</a></li>
+  </ul>
+
+<div id="content">
+	
+	<!-- http://snook.ca/archives/html_and_css/css-text-rotation -->
+	<p>Found at: <a href="http://snook.ca/archives/html_and_css/css-text-rotation">http://snook.ca/archives/html_and_css/css-text-rotation</a> ==></p>
+	<div class="example-date">
+	  <span class="day">10</span> 
+	  <span class="month">Sept</span> 
+	  <span class="year">2010</span>
+	</div>
+
+	<br />
+	
+	<!--http://hacks.mozilla.org/2010/07/firefox4-beta2/-->
+	<div id="victim">
+	See this box? Move your mouse over it, and its position <code>transform: rotate(5deg);</code> will transform <code>
+	transform:  rotate(350deg) scale(1.4) rotate(-30deg);</code> through a smooth animation.
+	</div>
+
+	<h2>.net Magazine tutorials</h2>
+	<h3>Issue 207</h3>
+	<a href="testing/tabs/tabs.html">tabs</a>
+	<a href="testing/buttons.html">buttons</a>
+	
+</div>
+
+<div id="footer">
+Created by Alex Hedley 2010
+</div>
+
+</div>
+
+</body>
+</html>

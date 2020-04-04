@@ -1,0 +1,16 @@
+#photo
+{
+    background:url(lake.jpg) #000;
+    margin:50px auto;
+    overflow:hidden;
+    position:relative;
+    height: 288px;
+    width: 384px;
+}
+
+.particle
+{
+    height:3px;
+    position:absolute;
+    width:3px;
+}

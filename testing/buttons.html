@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+	<meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+	<title>Buttons Test</title>
+
+	<style type="text/css">
+	a {
+		font: bold 14px Helvetica, Veranda, Arial, sans-serif;
+		text-decoration: none;
+		color: #FFF;
+		display: inline-block;
+		padding: 0 14px;
+		line-height: 30px;
+		background-color: #00a9e4;
+		
+		/* Rounded Corners */
+		-webkit-border-radius: 15px;
+		-moz-border-radius: 15px;
+		border-radius: 15px;
+		
+		/* Text Shadow */
+		text-shadow: -1px -1px 1px rgba(0,0,0,.3);
+		
+		/* Button Shadow */
+		-webkit-box-shadow: 2px 2px 4px rgba(0,0,0,.3);
+		-moz-box-shadow: 2px 2px 4px rgba(0,0,0,.3);
+		box-shadow: 2px 2px 4px rgba(0,0,0,.3);
+		
+		/* Gradate the button */ 
+		background-image: -webkit-gradient(linear, 0 45%, 0 55%, 
+		from(rgba(255,255,255,.4)), to(rgba(255,255,255,0)));
+		background-image: -moz-linear-gradient(270deg,
+		rgba(255,255,255,.4) 45%, rgba(255,255,255,0) 55%);
+	}
+	</style>
+</head>
+
+<body>
+<h3>CSS</h3>
+<a href="http://bkwld.com">Visit BKWLD</a>
+
+
+<h3>HTML5</h3>
+<canvas id="button" width="120" height="36">
+	<a href="http://bkwld.com">Visit BKWLD</a>
+</canvas>
+<script language="javascript">
+	var el = document.getElementById("button");
+	var context = el.getContext("2d");
+	el.onclick = function() { window.location = "http://bkwld.com"; }
+	el.style.cursor = "pointer";
+	
+	var w = 115;
+	var h = 30;
+	
+	context.beginPath();
+	context.arc(h/2, h/2, h/2, Math.PI/2, Math.PI*3/2, false);
+	context.lineTo(w-h/2, 0);
+	context.arc(w-h/2, h/2, h/2, Math.PI*3/2, Math.PI/2, false);
+	context.lineTo(h/2, h);
+	context.closePath();
+	
+	context.shadowOffsetX = context.shadowOffsetY = 2;
+	context.shadowBlur = 4;
+	context.shadowColor = "rgba(0,0,0,.3)";
+	context.fillStyle = "#00a9e4";
+	context.fill();
+	
+	var gradient = context.createLinearGradient(0,0,0,h);
+	gradient.addColorStop(.45, "rgba(255,255,255,.4)");
+	gradient.addColorStop(.55, "rgba(255,255,255,0)");
+	context.fillStyle = gradient;
+	context.shadowColor = null;
+	context.fill();
+	
+	context.font = "bold 14px Helvetica, Verdana, Arial, sans-serif";
+	context.shadowOffsetX = context.shadowOffsetY = -1;
+	context.shadowBlur = 1;
+	context.shadowColor = "rgba(0,0,0,.3)";
+	context.fillStyle = "#FFF";
+	context.textAlign = "center";
+	context.textBaseline = "middle";
+	context.fillText("Visit BKWLD",w/2,h/2);
+</script>
+
+</body>
+
+</html>

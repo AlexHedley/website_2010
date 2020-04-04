@@ -1,0 +1,923 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>CSS3 Testing</title>
+
+<link href="../../css/reset.css" rel="stylesheet" type="text/css" />
+<link href="../../css/general.css" rel="stylesheet" type="text/css" />
+<link href="../../css/mainNav.css" rel="stylesheet" type="text/css" />
+
+<link rel="Shortcut Icon" href="../../CSS3.ico">
+
+<style type="text/css">
+pre {
+	background-color: #F2FFE1;
+	border: 1px solid #83D13D;
+	padding: 10px;
+	margin-right: 20px;
+    white-space: normal;
+}
+
+blockquote {
+	font-style: italic;
+	padding: 5px 10px;
+	background-color: #eee;
+}
+
+#comp {
+	display: none;
+}
+
+.colouredBorderOne {
+	border: 8px solid #000;
+	border-bottom-colors: #500 #600 #700 #800 #900 #a00 #b00 #c00;
+	-o-border-bottom-colors: #500 #600 #700 #800 #900 #a00 #b00 #c00;
+	-icab-border-bottom-colors: #500 #600 #700 #800 #900 #a00 #b00 #c00;
+	-khtml-border-bottom-colors: #500 #600 #700 #800 #900 #a00 #b00 #c00;
+	-moz-border-bottom-colors: #500 #600 #700 #800 #900 #a00 #b00 #c00;
+	-webkit-border-bottom-colors: #500 #600 #700 #800 #900 #a00 #b00 #c00;
+	border-top-colors: #500 #600 #700 #800 #900 #a00 #b00 #c00;
+	-o-border-top-colors: #500 #600 #700 #800 #900 #a00 #b00 #c00;
+	-icab-border-top-colors: #500 #600 #700 #800 #900 #a00 #b00 #c00;
+	-khtml-border-top-colors: #500 #600 #700 #800 #900 #a00 #b00 #c00;
+	-moz-border-top-colors: #500 #600 #700 #800 #900 #a00 #b00 #c00;
+	-webkit-border-top-colors: #500 #600 #700 #800 #900 #a00 #b00 #c00;
+	border-left-colors: #500 #600 #700 #800 #900 #a00 #b00 #c00;
+	-o-border-left-colors: #500 #600 #700 #800 #900 #a00 #b00 #c00;
+	-icab-border-left-colors: #500 #600 #700 #800 #900 #a00 #b00 #c00;
+	-khtml-border-left-colors: #500 #600 #700 #800 #900 #a00 #b00 #c00;
+	-moz-border-left-colors: #500 #600 #700 #800 #900 #a00 #b00 #c00;
+	-webkit-border-left-colors: #500 #600 #700 #800 #900 #a00 #b00 #c00;
+	border-right-colors: #500 #600 #700 #800 #900 #a00 #b00 #c00;
+	-o-border-right-colors: #500 #600 #700 #800 #900 #a00 #b00 #c00;
+	-icab-border-right-colors: #500 #600 #700 #800 #900 #a00 #b00 #c00;
+	-khtml-border-right-colors: #500 #600 #700 #800 #900 #a00 #b00 #c00;
+	-moz-border-right-colors: #500 #600 #700 #800 #900 #a00 #b00 #c00;
+	-webkit-border-right-colors: #500 #600 #700 #800 #900 #a00 #b00 #c00;
+	padding: 5px 5px 5px 15px;
+}
+
+.colouredBorderTwo {
+	border: 8px solid #000;
+	border-bottom-colors: #555 #666 #777 #888 #999 #aaa #bbb #ccc;
+	-o-border-bottom-colors: #555 #666 #777 #888 #999 #aaa #bbb #ccc;
+	-icab-border-bottom-colors: #555 #666 #777 #888 #999 #aaa #bbb #ccc;
+	-khtml-border-bottom-colors: #555 #666 #777 #888 #999 #aaa #bbb #ccc;
+	-moz-border-bottom-colors: #555 #666 #777 #888 #999 #aaa #bbb #ccc;
+	-webkit-border-bottom-colors: #555 #666 #777 #888 #999 #aaa #bbb #ccc;
+	border-top-colors: #555 #666 #777 #888 #999 #aaa #bbb #ccc;
+	-o-border-top-colors: #555 #666 #777 #888 #999 #aaa #bbb #ccc;
+	-icab-border-top-colors: #555 #666 #777 #888 #999 #aaa #bbb #ccc;
+	-khtml-border-top-colors: #555 #666 #777 #888 #999 #aaa #bbb #ccc;
+	-moz-border-top-colors: #555 #666 #777 #888 #999 #aaa #bbb #ccc;
+	-webkit-border-top-colors: #555 #666 #777 #888 #999 #aaa #bbb #ccc;
+	border-left-colors: #555 #666 #777 #888 #999 #aaa #bbb #ccc;
+	-o-border-left-colors: #555 #666 #777 #888 #999 #aaa #bbb #ccc;
+	-icab-border-left-colors: #555 #666 #777 #888 #999 #aaa #bbb #ccc;
+	-khtml-border-left-colors: #555 #666 #777 #888 #999 #aaa #bbb #ccc;
+	-moz-border-left-colors: #555 #666 #777 #888 #999 #aaa #bbb #ccc;
+	-webkit-border-left-colors: #555 #666 #777 #888 #999 #aaa #bbb #ccc;
+	border-right-colors: #555 #666 #777 #888 #999 #aaa #bbb #ccc;
+	-o-border-right-colors: #555 #666 #777 #888 #999 #aaa #bbb #ccc;
+	-icab-border-right-colors: #555 #666 #777 #888 #999 #aaa #bbb #ccc;
+	-khtml-border-right-colors: #555 #666 #777 #888 #999 #aaa #bbb #ccc;
+	-moz-border-right-colors: #555 #666 #777 #888 #999 #aaa #bbb #ccc;
+	-webkit-border-right-colors: #555 #666 #777 #888 #999 #aaa #bbb #ccc;
+	padding: 5px 5px 5px 15px;"
+}
+
+#left_column #border-image-1 {
+	margin: 0 30px;
+	width: 270px;
+	padding: 14px;
+	-o-border-image: url('border.png') 27 round round;
+	-icab-border-image: url('border.png') 27 round round;
+	-khtml-border-image: url('border.png') 27 round round;
+	-moz-border-image: url('border.png') 27 round round;
+	-webkit-border-image: url('border.png') 27 round round;
+	border-image: url('border.png') 27 round round;
+	border: double orange 1em
+}
+
+#left_column #border-image-2 {
+	margin: 0 30px;
+	width: 270px;
+	padding: 14px;
+	-o-border-image: url('border.png') 27 stretch stretch;
+	-icab-border-image: url('border.png') 27 stretch stretch;
+	-khtml-border-image: url('border.png') 27 stretch stretch;
+	-moz-border-image: url('border.png') 27 stretch stretch;
+	-webkit-border-image: url('border.png') 27 stretch stretch;
+	border-image: url('border.png') 27 stretch stretch;
+	border: double orange 1em;
+}
+
+div.exampleborderradius {
+	background-color: #eee;
+	padding: 20px;
+	margin-top: 10px;
+	margin-right: 20px;
+	text-align: center;
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+}
+
+#left_column #box-shadow-1 {
+	margin: 30px 0;
+	-o-box-shadow: 10px 10px 5px #888;
+	-icab-box-shadow: 10px 10px 5px #888;
+	-khtml-box-shadow: 10px 10px 5px #888;
+	-moz-box-shadow: 10px 10px 5px #888;
+	-webkit-box-shadow: 10px 10px 5px #888;
+	box-shadow: 10px 10px 5px #888;
+	padding: 5px 5px 5px 15px;
+	background-color: #eee;
+	width: 90%;
+}
+
+#left_column #box-shadow-2 {
+	margin: 30px 0;
+	box-shadow: -10px -10px 0px #000;
+	-o-box-shadow: -10px -10px 0px #000;
+	-icab-box-shadow: -10px -10px 0px #000;
+	-khtml-box-shadow: -10px -10px 0px #000;
+	-moz-box-shadow: -10px -10px 0px #000;
+	-webkit-box-shadow: -10px -10px 0px #000;
+	border-radius: 5px;
+	-o-border-radius: 5px;
+	-icab-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	padding: 5px 5px 5px 15px;
+	background-color: #eee;
+	width: 90%;
+}
+
+.example { 
+	color: #000; 
+	font-weight: bold; 
+	width: 85px; 
+	height: 87px; 
+	float: left; 
+	border: 10px dotted #00f; 
+	padding: 10px; 
+	background: url(block.gif); 
+	background-position: top left; 
+}
+
+
+.exampleblock { 
+	width: 125px; 
+	height: 127px; 
+	margin-right: 20px !important; 
+	float: left; 
+	background-color: #0f0; 
+}
+
+div.exampleHSL div { 
+	width: 50px; 
+	height: 50px; 
+	float: left;  
+	margin-bottom: 10px; 
+}
+
+#left_column #preview-text_shadow {
+	font-weight: bold;
+	text-shadow: 2px 2px 2px #999;
+}
+
+#left_column #preview-multi_text_shadows p{
+	background: black;
+	color: white;
+	font-size: 30px;
+	margin: 10px;
+	padding: 40px 0 10px;
+	text-align: center;
+	text-shadow: 0 0 4px white, 0 -5px 4px #ff3, 2px -10px 6px #fd3, -2px -15px 11px #f80, 2px -25px 18px #f20;
+}
+
+div.test {
+	white-space: nowrap; 
+	width: 14em; 
+	height: 1.6em; 
+	overflow: hidden; 
+	border: 1px solid #000; 
+	background-color: #fff;
+}
+div.test:hover {
+	-o-text-overflow: inherit;
+	text-overflow: inherit;
+	overflow: visible;
+}
+
+#left_column .word-wrap {
+	border: 1px solid;
+	padding: 5px;
+	width: 200px;
+	word-wrap:normal; 
+}
+
+#left_column #word-wrap {
+	word-wrap: break-word;
+}
+
+div.container {
+	width:35em;
+	border: 10px solid #900;
+	height: 40px;
+}
+
+div.split {
+	box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-icab-box-sizing: border-box;
+	-khtml-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	width:50%;
+	height: 40px;
+	text-align: center;
+	border: 10px silver ridge;
+	padding: 2px;
+	float:left;
+}
+
+div.resize {
+	width: 100px;
+	height: 100px;
+	border: 1px solid;
+	resize: both;
+	overflow: auto;
+}
+
+div.horizontal {
+	resize: horizontal;
+	max-width: 600px;
+	min-width: 100px;
+}
+
+div.vertical {
+	resize: vertical;
+	max-height: 300px;
+	min-height: 100px;
+}
+
+div.exampleOutline {
+	width: 150px; 
+	height: 150px;
+	border: 1px solid black;
+	outline: 1px solid blue;
+	outline-offset: 12px;
+}
+
+div#begins p.badbrowser, 
+div#ends p.badbrowser, 
+div#contains p.badbrowser {
+	background: #f00;
+}
+div#begins p[title^="ho"], 
+div#ends p[title$="t"], 
+div#contains p[title*="ont"] {
+	background: green;
+}
+
+#left_column .multi-column {
+	background-color: #fff;
+	-o-column-gap: 1em;
+	-icab-column-gap: 1em;
+	-khtml-column-gap: 1em;
+	-moz-column-gap: 1em;
+	-webkit-column-gap: 1em;
+	column-gap: 1em;
+	padding: 5px;
+}
+
+#left_column #multi-column-1 {
+	-o-column-width: 13em;
+	-icab-column-width: 13em;
+	-khtml-column-width: 13em;
+	-moz-column-width: 13em;
+	-webkit-column-width: 13em;
+	column-width: 13em;
+}
+
+#left_column #multi-column-2 {
+	-o-column-count: 3;
+	-icab-column-count: 3;
+	-khtml-column-count: 3;
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count: 3;
+	-o-column-rule: 1px solid black;
+	-moz-column-rule: 1px solid black;
+	-webkit-column-rule: 1px solid black;
+	column-rule: 1px solid black;
+}
+
+</style>
+
+<script type="text/javascript">
+function hide(id)
+{
+	var elem = document.getElementById(id);
+	elem.style.display = 'none';
+}
+function show(id)
+{
+	var elem = document.getElementById(id);
+	elem.style.display = 'block';
+}
+</script>
+
+</head>
+
+<body>
+<div id="main">
+<h1><strong>Alex</strong> Hedley</h1>
+
+<br />
+<br />
+
+  <ul id="mainNav">
+    <li><a href="../../index.html" id="homeLink">Home</a></li>
+	<li><a href="../../doodleGod/doodleGod.html" id="dGLink">Doodle God</a></li>
+	<li><a href="../../testing.html" id="tLink">Testing</a>
+		<ul>
+			<li><a href="../fireworks.html" id="fireLink">Fireworks</a></li>
+			<li><a href="CSS3 Testing.html" id="fireLink">CSS3 Testing</a></li>
+		</ul>
+	</li>
+	<li><a href="../../Code.html" id="cLink">Code</a></li>
+  </ul>
+
+<h1>CSS3 Previews</h1>
+
+<p>So as you can see I have just dumped the raw code from www.css3.info and streamlined it for reference</p>
+
+<input type="button" onclick="show('comp');" value="Show" /> 
+<input type="button" onclick="hide('comp');" value="Hide" />
+
+<div id="comp">
+<table>
+<caption>Which browsers do they work in?</caption>
+<tr>
+<th></th>
+<th><img src="IE.jpg" alt="IE8"></th>
+<th><img src="Firefox.jpg" alt="Firefox"></th>
+<th><img src="Safari.jpg" alt="Safari"></th>
+<th><img src="Chrome.jpg" alt="Chrome"</th>
+<th><img src="Opera.jpg" alt="Opera"></th>
+</tr>
+<tr>
+<td><strong>Borders</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><em>border-color</em></td>
+<td></td>
+<td>&#10003;</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><em>border-image</em></td>
+<td></td>
+<td></td>
+<td>&#10003;</td>
+<td>&#10003;</td>
+<td>&#10003;</td>
+</tr>
+<tr>
+<td><em>border-radius</em></td>
+<td></td>
+<td>&#10003;</td>
+<td>&#10003;</td>
+<td>&#10003;</td>
+<td>&#10003;</td>
+</tr>
+<tr>
+<td><em>box-shadow</em></td>
+<td></td>
+<td>&#10003;</td>
+<td>&#10003;</td>
+<td>&#10003;</td>
+<td>&#10003;</td>
+</tr>
+<tr>
+<td><Strong>Backgrounds</Strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><em>background-origin and background-clip</em></td>
+<td></td>
+<td>&#10003;</td>
+<td>&#10003;</td>
+<td>&#10003;</td>
+<td>&#10003;</td>
+</tr>
+<tr>
+<td><em>background-size</em></td>
+<td></td>
+<td></td>
+<td>&#10003;</td>
+<td>&#10003;</td>
+<td></td>
+</tr>
+<tr>
+<td><em>multiple backgrounds</em></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Colour</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><em>HSL colours</em></td>
+<td></td>
+<td>&#10003;</td>
+<td>&#10003;</td>
+<td>&#10003;</td>
+<td>&#10003;</td>
+</tr>
+<tr>
+<td><em>HSLA colors</em></td>
+<td></td>
+<td>&#10003;</td>
+<td>&#10003;</td>
+<td>&#10003;</td>
+<td>&#10003;</td>
+</tr>
+<tr>
+<td><em>HSLA colors</em></td>
+<td></td>
+<td>&#10003;</td>
+<td>&#10003;</td>
+<td>&#10003;</td>
+<td>&#10003;</td>
+</tr>
+<tr>
+<td><em>opacity</em></td>
+<td></td>
+<td>&#10003;</td>
+<td>&#10003;</td>
+<td>&#10003;</td>
+<td>&#10003;</td>
+</tr>
+<tr>
+<td><em>RGBA colors</em></td>
+<td></td>
+<td>&#10003;</td>
+<td>&#10003;</td>
+<td>&#10003;</td>
+<td>&#10003;</td>
+</tr>
+<tr>
+<td><strong>Text effects</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<tr>
+<td><em>text-shadow</em></td>
+<td></td>
+<td>&#10003;</td>
+<td>&#10003;</td>
+<td>&#10003;</td>
+<td>&#10003;</td>
+</tr>
+<tr>
+<tr>
+<td><em>text-overflow</em></td>
+<td>&#10003;</td>
+<td>&#10003;</td>
+<td>&#10003;</td>
+<td>&#10003;</td>
+<td>&#10003;</td>
+</tr>
+<tr>
+<tr>
+<td><em>word-wrap</em></td>
+<td>&#10003;</td>
+<td>&#10003;</td>
+<td>&#10003;</td>
+<td>&#10003;</td>
+<td>&#10003;</td>
+</tr>
+<tr>
+<tr>
+<td><strong>User-interface</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<tr>
+<td><em>box-sizing</em></td>
+<td>&#10003;</td>
+<td>&#10003;</td>
+<td>&#10003;</td>
+<td>&#10003;</td>
+<td>&#10003;</td>
+</tr>
+<tr>
+<tr>
+<td><em>resize</em></td>
+<td></td>
+<td>&#10003;</td>
+<td>&#10003;</td>
+<td>&#10003;</td>
+<td></td>
+</tr>
+<tr>
+<td><em>outline</em></td>
+<td></td>
+<td>&#10003;</td>
+<td>&#10003;</td>
+<td>&#10003;</td>
+<td>&#10003;</td>
+</tr>
+<tr>
+<td><strong>Selectors</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><em>attribute selectors</em></td>
+<td>&#10003;</td>
+<td>&#10003;</td>
+<td>&#10003;</td>
+<td>&#10003;</td>
+<td>&#10003;</td>
+</tr>
+<tr>
+<td><strong>Other modules</strong></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><em>multi-column layout</em></td>
+<td></td>
+<td>&#10003;</td>
+<td>&#10003;</td>
+<td>&#10003;</td>
+<td></td>
+</tr>
+</table>
+</div>
+
+<hr />
+<h1>BORDERS</h1>
+<h2>http://www.css3.info/preview/colored-border/</h2>
+<code>
+border: 8px solid #000;
+-moz-border-bottom-colors: #555 #666 #777 #888 #999 #aaa #bbb #ccc;
+-moz-border-top-colors:    #555 #666 #777 #888 #999 #aaa #bbb #ccc;
+-moz-border-left-colors:   #555 #666 #777 #888 #999 #aaa #bbb #ccc;
+-moz-border-right-colors:  #555 #666 #777 #888 #999 #aaa #bbb #ccc;
+padding: 5px 5px 5px 15px;
+</code>
+
+<div class="colouredBorderOne">Mozilla/Firefox users should see a nicely fading red border on this box&#8230;</div>
+<br />
+<div class="colouredBorderTwo">Mozilla/Firefox users should see a nice grey fading border on this box&#8230;</div>
+
+<br />
+
+<h2>http://www.css3.info/preview/border-image/</h2>
+<div id="left_column">
+<p id="border-image-1">Lorem ipsum dolor sit amet.</p>
+<br />
+<p id="border-image-2">Lorem ipsum dolor sit amet.</p>
+</div>
+
+
+<br />
+
+<h2>http://www.css3.info/preview/rounded-border/</h2>
+<div class="exampleborderradius">This box should have a rounded corners for Firefox, Safari/Chrome, Opera and IE9.</div>
+
+<br />
+<h2>http://www.css3.info/preview/box-shadow/</h2>
+<div id="left_column">
+<p id="box-shadow-1">There should be a nice grey fading shadow under this box&#8230;</p>
+<p id="box-shadow-2">There should be a hard black shadow above this one, and the shadow should follow the rounded corners.</p>
+</div>
+
+
+<br />
+<h1>BACKGROUNDS</h1>
+<h2>http://www.css3.info/preview/background-origin-and-background-clip/</h2>
+<p>Here&#8217;s 2 times 3 examples, the first row with <code>background-clip</code> set to <code>border-box</code>, in the second row it&#8217;s set to <code>padding-box</code>. The Mozilla and WebKit version use their respective syntax.</p>
+
+<div class="exampleblock">
+<div class="example" style="background-clip: border-box; -icab-background-clip: border; -khtml-background-clip: border; -moz-background-clip: border; -webkit-background-clip: border; background-origin: border-box;  -icab-background-origin: border; -khtml-background-origin: border; -moz-background-origin: border; -webkit-background-origin: border;  background-repeat: no-repeat; background-color: #f00;"><code>border-box</code></div>
+</div>
+<div class="exampleblock">
+<div class="example" style="background-clip: border-box; -icab-background-clip: border; -khtml-background-clip: border; -moz-background-clip: border; -webkit-background-clip: border; background-origin: padding-box;  -icab-background-origin: padding; -khtml-background-origin: padding; -moz-background-origin: padding; -webkit-background-origin: padding;  background-repeat: no-repeat; background-color: #f00;"><code>padding-box</code></div>
+</div>
+<div class="exampleblock">
+<div class="example" style="background-clip: border-box;  -icab-background-clip: border; -khtml-background-clip: border; -moz-background-clip: border; -webkit-background-clip: border; background-origin: content-box;  -icab-background-origin: content; -khtml-background-origin: content; -moz-background-origin: content; -webkit-background-origin: content;  background-repeat: no-repeat; background-color: #f00;"><code>content-box</code></div>
+</div>
+<p><br style="clear:both;"/></p>
+<div class="exampleblock">
+<div class="example" style="background-clip: padding-box;  -icab-background-clip: padding; -khtml-background-clip: padding; -moz-background-clip: padding; -webkit-background-clip: padding; background-origin: border-box;  -icab-background-origin: border; -khtml-background-origin: border; -moz-background-origin: border; -webkit-background-origin: border;  background-repeat: no-repeat; background-color: #f00;"><code>border-box</code></div>
+</div>
+
+<div class="exampleblock">
+<div class="example" style="background-clip: padding-box;  -icab-background-clip: padding; -khtml-background-clip: padding; -moz-background-clip: padding; -webkit-background-clip: padding; background-origin: padding-box;  -icab-background-origin: padding; -khtml-background-origin: padding; -moz-background-origin: padding; -webkit-background-origin: padding;  background-repeat: no-repeat; background-color: #f00;"><code>padding-box</code></div>
+</div>
+<div class="exampleblock">
+<div class="example" style="background-clip: padding-box;  -icab-background-clip: padding; -khtml-background-clip: padding; -moz-background-clip: padding; -webkit-background-clip: padding; background-origin: content-box;  -icab-background-origin: content; -khtml-background-origin: content; -moz-background-origin: content; -webkit-background-origin: content; background-repeat: no-repeat; background-color: #f00;"><code>content-box</code></div>
+</div>
+<p><br style="clear:both;"/></p>
+
+<br />
+<h2>http://www.css3.info/preview/background-size/</h2>
+<div style="background: url(banner_pinguins.jpg); -webkit-background-size: 200px 50px; -khtml-background-size: 200px 50px; -o-background-size: 200px 50px; -moz-background-size: 200px 50px; background-repeat: no-repeat; padding: 60px 5px 5px 5px; border: 1px solid #900; color: #83D13E">This div has <code>background-size: 200px 50px</code>. The background image should be really small, in the left upper corner of this div.</div>
+<p>Original Pic <br /><img src="banner_pinguins.jpg" </p>
+
+<br />
+<h2>http://www.css3.info/preview/multiple-backgrounds/</h2>
+<p>Isn't supported yet</p>
+
+
+<br />
+<h1>COLOUR</h1>
+<h2>http://www.css3.info/preview/hsl/</h2>
+<div class="exampleHSL">
+<div style="background-color: hsl(0,100%, 50%);"></div>
+<div style="background-color: hsl(120,100%, 50%);"></div>
+<div style="background-color: hsl(240,100%, 50%);"></div>
+<p>	<br style="clear: both;" /></p>
+
+<div style="background-color: rgb(255,0,0);"></div>
+<div style="background-color: rgb(0,255,0);"></div>
+<div style="background-color: rgb(0,0,255);"></div>
+<p>	<br style="clear: both;" />
+</div>
+
+<br />
+<h2>http://www.css3.info/preview/hsla/</h2>
+<div class="exampleHSL">
+<div style="background-color: hsla(0,100%,50%,0.2);"></div>
+<div style="background-color: hsla(0,100%,50%,0.4);"></div>
+<div style="background-color: hsla(0,100%,50%,0.6);"></div>
+<div style="background-color: hsla(0,100%,50%,0.8);"></div>
+<div style="background-color: hsla(0,100%,50%,1);"></div>
+<p><br style="clear:both" />
+</div>
+<div class="exampleHSL">
+<div style="background-color: rgb(243,191,189);"></div>
+<div style="background-color: rgb(246,143,142);"></div>
+<div style="background-color: rgb(249,95,94);"></div>
+<div style="background-color: rgb(252,47,47);"></div>
+
+<div style="background-color: rgb(255,0,0);"></div>
+<p><br style="clear:both" />
+</div>
+
+<br />
+<h2>http://www.css3.info/preview/opacity/</h2>
+<div class="exampleHSL" style="height: 120px; margin: 10px 0 0 30px;">
+<div style="background: rgb(255, 0, 0) ; opacity: 0.2;"></div>
+<div style="background: rgb(255, 0, 0) ; opacity: 0.4;"></div>
+<div style="background: rgb(255, 0, 0) ; opacity: 0.6;"></div>
+<div style="background: rgb(255, 0, 0) ; opacity: 0.8;"></div>
+<div style="background: rgb(255, 0, 0) ; opacity: 1;"></div>
+<p><br style="clear: both;"/></p>
+<div style="background: rgb(243, 191, 189) ; "></div>
+<div style="background: rgb(246, 143, 142) ; "></div>
+<div style="background: rgb(249, 95 , 94) ; "></div>
+<div style="background: rgb(252, 47, 47) ; "></div>
+<div style="background: rgb(255, 0, 0) ; "></div>
+</div>
+
+<br />
+<h2>http://www.css3.info/preview/rgba/</h2>
+<div class="exampleHSL" style="height: 120px; margin: 10px 0 0 30px;">
+<div style="background: rgba(255,0,0,0.2);"></div>
+<div style="background: rgba(255,0,0,0.4);"></div>
+<div style="background: rgba(255,0,0,0.6);"></div>
+<div style="background: rgba(255,0,0,0.8);"></div>
+<div style="background: rgba(255,0,0,1);"></div>
+<p><br style="clear: both;"/></p>
+<div style="background: rgb(243, 191, 189);"></div>
+
+<div style="background: rgb(246, 143, 142);"></div>
+<div style="background: rgb(249, 95 , 94);"></div>
+<div style="background: rgb(252, 47, 47);"></div>
+<div style="background: rgb(255, 0, 0);"></div>
+</div>
+
+
+<br />
+<h1>TEXT EFFECTS</h1>
+<h2>http://www.css3.info/preview/text-shadow/</h2>
+<div id="left_column">
+<p id="preview-text_shadow">Users of Webkit (from Safari 3+), Opera 9.5, Firefox 3.1(pre-Alpha), Konqueror or iCab should see a grey drop-shadow behind this paragraph.</p>
+
+<div id="preview-multi_text_shadows">
+<p>Multiple shadows are Hot</p>
+</div>
+
+
+<br />
+<h2>http://www.css3.info/preview/text-overflow/</h2>
+<p>The following two <code>div</code>s contains the following text: &#8220;Lorem ipsum dolor sit amet, consectetur&#8221;. As you can see, it is clipped. The first uses <code>text-overflow: ellipsis;</code>, the second uses <code>text-overflow: clip;</code>.</p>
+<div class="test" style="text-overflow: ellipsis; -o-text-overflow: ellipsis; -icab-text-overflow: ellipsis; -khtml-text-overflow: ellipsis; -moz-text-overflow: ellipsis; -webkit-text-overflow: ellipsis; ">Lorem ipsum dolor sit amet, consectetur</div>
+<p></p>
+<div class="test" style="text-overflow: clip; -o-text-overflow: clip; -icab-text-overflow: clip; -khtml-text-overflow: clip; -moz-text-overflow: clip; -webkit-text-overflow: clip; ">Lorem ipsum dolor sit amet, consectetur</div>
+<p><code>text-overflow: ellipsis-word;</code> , when implemented, should look like this:</p>
+<p></p>
+<div class="test">Lorem ipsum dolor sit�</div>
+<p>This is how it looks pre and post hover in IE8</p>
+<img src="overflow.jpg">
+
+<br />
+
+<h2>http://www.css3.info/preview/word-wrap/</h2>
+<div id="left_column">
+<p class="word-wrap"> This paragraph has long words thisisaveryverylongwordthatisntreallyoneword and again a longwordwithnospacesinit</p>
+<p class="word-wrap" id="word-wrap"> This paragraph has long words thisisaveryverylongwordthatisntreallyoneword and again a longwordwithnospacesinit</p>
+</div>
+
+
+<br />
+<h2>http://www.css3.info/preview/box-sizing/</h2>
+<div class="container">
+<div class="split">This div occupies the left half.</div>
+<div class="split">This div occupies the right half.</div>
+</div>
+
+<br />
+<h2>http://www.css3.info/preview/resize/</h2>
+<div class="resize">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+
+<br />
+<h2>http://www.css3.info/preview/outline/</h2>
+<div class="exampleOutline">
+<p>This <code>div</code> has both a black border, and a blue outline, with an offset of 12 pixels.</p>
+</div>
+
+<br />
+<h2>http://www.css3.info/preview/attribute-selectors/</h2>
+<blockquote>
+<h4 style="text-transform:none;">6.3.2. Substring matching attribute selectors</h4>
+<p>Three additional attribute selectors are provided for matching substrings in the value of an attribute:</p>
+<dl>
+<dt><code>[att^=val]</code></dt>
+<dd>Represents an element with the <code>att</code> attribute whose value <strong>begins</strong> with the prefix &#8220;val&#8221;.</dd>
+
+<dt><code>[att$=val]</code> </dt>
+<dd>Represents an element with the <code>att</code> attribute whose value <strong>ends</strong> with the suffix &#8220;val&#8221;.</dd>
+<dt><code>[att*=val]</code> </dt>
+<dd>Represents an element with the <code>att</code> attribute whose value <strong>contains</strong> at least one instance of the substring &#8220;val&#8221;.</dd>
+
+</dl>
+<p>Attribute values must be identifiers or strings. The case-sensitivity of attribute names in selectors depends on the document language.</p>
+</blockquote>
+
+
+<strong><code>E[att*="string"] {property: value;}</code></strong> where <em>E</em> is a selector.</p>
+<p>p[title$=&quot;ho&quot;] {background: green;}</p>
+<pre>&lt;p title=&quot;home&quot;&gt;
+  This paragraph should have a green background.
+&lt;/p&gt;
+&lt;p title=&quot;contact&quot;&gt;
+
+  The attribute selector doesn't match this paragraph.
+&lt;/p&gt;
+&lt;p title=&quot;house&quot;&gt;
+  This paragraph should have a green background.
+&lt;/p&gt;
+&lt;p&gt;
+  The attribute selector doesn't match this paragraph.
+&lt;/p&gt;
+
+&lt;p title=&quot;hot&quot;&gt;
+  This paragraph should have a green background.
+&lt;/p&gt;</pre>
+
+<div id="begins">
+<p title="home" class="badbrowser">This paragraph should have a green background.</p>
+<p title="contact">The attribute selector doesn&#8217;t match this paragraph.</p>
+
+<p title="house" class="badbrowser">This paragraph should have a green background.</p>
+<p>The attribute selector doesn&#8217;t match this paragraph.</p>
+<p title="hot" class="badbrowser">This paragraph should have a green background.</p>
+</div>
+
+<hr />
+<p>p[title$=&quot;t&quot;] {background: green;}</p>
+<pre>
+&lt;p title=&quot;home&quot;&gt;
+  The attribute selector doesn't match this paragraph.
+
+&lt;/p&gt;
+&lt;p title=&quot;contact&quot;&gt;
+  This paragraph should have a green background.
+&lt;/p&gt;
+&lt;p title=&quot;house&quot;&gt;
+  The attribute selector doesn't match this paragraph.
+&lt;/p&gt;
+&lt;p&gt;
+
+  The attribute selector doesn't match this paragraph.
+&lt;/p&gt;
+&lt;p title=&quot;hot&quot;&gt;
+  This paragraph should have a green background.
+&lt;/p&gt;
+</pre>
+
+<div id="ends">
+<p title="home">The attribute selector doesn&#8217;t match this paragraph.</p>
+
+<p title="contact" class="badbrowser">This paragraph should have a green background.</p>
+<p title="house">The attribute selector doesn&#8217;t match this paragraph.</p>
+<p>The attribute selector doesn&#8217;t match this paragraph.</p>
+<p title="hot" class="badbrowser">This paragraph should have a green background.</p>
+</div>
+
+<hr />
+<p>
+p[title*=&quot;ont&quot;] {background: green;}
+</p>
+<pre>
+&lt;p title=&quot;home&quot;&gt;
+
+  The attribute selector doesn't match this paragraph.
+&lt;/p&gt;
+&lt;p title=&quot;contact&quot;&gt;
+  This paragraph should have a green background.
+&lt;/p&gt;
+&lt;p title=&quot;house&quot;&gt;
+  The attribute selector doesn't match this paragraph.
+&lt;/p&gt;
+
+&lt;p&gt;
+  The attribute selector doesn't match this paragraph.
+&lt;/p&gt;
+&lt;p title=&quot;hot&quot;&gt;
+  The attribute selector doesn't match this paragraph.
+&lt;/p&gt;
+</pre>
+
+<div id="contains">
+<p title="home">The attribute selector doesn&#8217;t match this paragraph.</p>
+<p title="contact" class="badbrowser">This paragraph should have a green background.</p>
+<p title="house">The attribute selector doesn&#8217;t match this paragraph.</p>
+<p>The attribute selector doesn&#8217;t match this paragraph.</p>
+<p title="hot">The attribute selector doesn&#8217;t match this paragraph.</p>
+</div>
+
+<br />
+<h2>http://www.css3.info/preview/multi-column-layout/</h2>
+<div id="left_column">
+<h4>Column Width</h4>
+<div class="multi-column" id="multi-column-1">
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean egestas blandit ipsum. Morbi nulla metus, luctus et, ullamcorper sit amet, commodo quis, nisl. Ut blandit lacus nec nibh. Phasellus eleifend enim et risus. Nam condimentum. Praesent euismod auctor dui. Nunc ut leo vel magna adipiscing tempor. Donec pretium, ligula et hendrerit faucibus, sem velit accumsan tortor, sodales tempor est ligula non velit. Nulla sagittis, odio quis porta nonummy, mauris arcu gravida odio, quis aliquam lacus elit non libero. Proin aliquam augue accumsan augue. Quisque ut eros at erat ultrices sodales. Nunc vitae ipsum. Mauris in elit in dolor imperdiet interdum. Vivamus egestas sagittis justo. Sed lorem. Sed vel neque in ipsum gravida nonummy. Nulla tempor blandit elit.</p>
+</div>
+<h4>Column Count</h4>
+<div class="multi-column" id="multi-column-2">
+<p>Cras urna metus, aliquam sed, condimentum eget, pellentesque scelerisque, massa. Nullam et est id augue blandit tincidunt. Ut consectetuer, justo eleifend varius facilisis, tortor lorem pharetra nunc, ac sodales purus nunc semper tortor. Integer nec urna. Praesent scelerisque, ipsum nec aliquet volutpat, sem ante sagittis risus, sed condimentum magna libero luctus elit. Donec pede purus, hendrerit non, laoreet vel, porta ut, neque. Cras eu lacus. Pellentesque tempus mattis magna. Nullam id nisl. Quisque dolor lorem, commodo ac, pharetra sed, nonummy nec, nulla. Mauris purus. Suspendisse eget mauris nec justo eleifend vestibulum. Nunc ut eros sed pede pretium congue. Etiam in elit ut nisi ultrices hendrerit. Cras vulputate ultrices quam. Curabitur venenatis. Cras sed nisi.</p>
+</div>
+</div>
+
+<div id="footer">
+Created by Alex Hedley 2010
+</div>
+
+</div>
+</body>
+</html>

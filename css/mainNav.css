@@ -1,0 +1,95 @@
+/* ----------------------- */
+/*   Navigation Styling    */
+/*   ------------------    */
+/*    Alex Hedley 2010     */
+/*                         */
+/*    Some ideas taken     */
+/* from CSS Missing Manual */
+/*     and Suckerfish      */
+/* ----------------------- */
+
+#mainNav li {
+	float: left;
+	width: 12em;
+}
+
+#mainNav, #mainNav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	border-left: 1px dashed #999;
+	overflow: hidden;
+	zoom: 1; /* for IE 6 */
+}
+
+#mainNav a {
+	color: #000;
+	font-size: 11px;
+	text-transform: uppercase;
+	text-decoration: none;
+	border: 1px dashed #999;
+	border-left: none;
+	padding: 7px 5px 7px 30px;
+	display: block;
+	background-color: #E7E7E7;
+	background-image: url(../images/nav.png);
+	background-repeat: no-repeat;
+	background-position: 0 2px;
+	/* background: #E7E7E7 url(images/nav.png) no-repeat 0 2px; */
+	text-align: center;
+	zoom: 1; /* for IE 6 */
+}
+
+#mainNav li {
+	float: left;
+	width: 12em;
+}
+
+#mainNav li ul {
+	position: absolute;
+	width: 12em; 
+	left: -999em; /* instead of display:none*/
+}
+
+#mainNav a:hover {
+	font-weight: bold;
+	background-color: #B2F511;
+	background-position: 3px 50%;
+}
+
+#mainNav li:hover ul {
+	left: auto;
+}
+
+#home #homeLink,
+#dG #dGLink,
+#test #tLink,
+#myCode #cLink {
+	background-color: #FFF;
+	background-position: 3px 100%;
+	padding-right: 15px;
+	padding-left: 30px;
+	font-weight: bold;
+	
+}
+
+#home #homeLink {
+	background-image: url(../images/home.png);
+	background-position: left center;
+	margin-left: 2px;
+}
+
+#dG #dGLink {
+	background-image: url(../images/dG.png);
+	background-position: left center;
+	margin-left: 2px;
+}
+
+#home #homeLink:hover,
+#dG #dGLink:hover,
+#test #tLink:hover,
+#myCode #cLink:hover {
+	font-weight: none;
+	background-color: #000;
+	color: #FFF;
+}

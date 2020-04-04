@@ -1,0 +1,13 @@
+@variables {
+  sheetColor: rgb(111,49,152)
+}
+
+#header h1 {
+	//color: var(sheetColor);
+	color: rgb(111,49,152);
+}	
+
+body {
+	//color: var(sheetColor);
+	color: rgb(111,49,152);
+}

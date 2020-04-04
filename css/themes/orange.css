@@ -1,0 +1,15 @@
+@variables {
+  sheetColor: rgb(255,128,0)
+}
+
+#header h1 {
+	//color: var(sheetColor);
+	color: rgb(255,128,0);
+}	
+
+body {
+	//color: var(sheetColor);
+	color: rgb(255,128,0);
+	background: #E1EEFD url(../../images/bg_body_orange.png) repeat-x;
+
+}
